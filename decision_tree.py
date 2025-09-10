@@ -49,12 +49,41 @@ if begin == 1:
                                     "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. You appear to be flying directly into the sun. The sun could not withstand the impact, and supernovas.")
                                 print("-----GAME OVER-----")
                                 quit(42)
-                        elif armoredtruck1 == 2:
-                            print("You decide to wait until the truck stops. While you wait, you notice in the far distance some moss growing towards the road.\nThe truck has stopped.")
-                            armoredtruckwait1 = int(input("1. Roll off the truck.\n2. Remain still."))
-                            if armoredtruckwait1 == 1:
-                                print("You roll off the truck. The ground could not handle the force of your landing. The only thing holding the planet together is the moss.\nYou fall towards the moss. The moss takes over. This is not good for your ability to make decisions.")
+                    elif armoredtruck1 == 2:
+                        print("You decide to wait until the truck stops. While you wait, you notice in the far distance some moss growing towards the road.\nThe truck has stopped.")
+                        armoredtruckwait1 = int(input("1. Roll off the truck.\n2. Remain still."))
+                        if armoredtruckwait1 == 1:
+                            print("You roll off the truck. The ground could not handle the force of your landing. The only thing holding the planet together is the moss.\nYou fall towards the moss. The moss takes over. This is not good for your ability to make decisions.")
+                            print("-----GAME OVER-----")
+                        elif armoredtruckwait1 == 2:
+                            print("You remain still. The truck driver notices you sitting on the truck, and decides to attempt to move you.")
+                            armoredtruckwait2 = int(input("1. Allow yourself to be moved.\n2. Remove the truck driver."))
+                            if armoredtruckwait2 == 1:
+                                print("You allow yourself to be moved. The truck driver grabs you, tossing you on the ground nearby.\nYou land in a patch of moss.\nThe moss takes over.\nYou had no control over this.")
                                 print("-----GAME OVER-----")
-                            elif armoredtruckwait1 == 2:
-                                print("You remain still. The truck driver notices you sitting on the truck, and decides to attempt to move you.")
-                                armoredtruckwait2 = int(input("1. Allow yourself to be moved.\n2. Remove the truck driver."))
+                                quit(0)
+                            elif armoredtruckwait2 == 2:
+                                print("You decide to remove the truck driver. You fly into their chest at a speed the truck itself cannot match. The truck driver is launched into the distance.\nYou aren't sure what to do now.\nYou can't go particularly far.")
+                                armoredtruckwait3 = int(input("1. Go to the moss."))
+                                if armoredtruckwait3 == 1:
+                                    print("You move towards the moss.\nThe moss grows towards you.\nYou make contact with the moss.\nThe moss takes over.\nThis was entirely your decision.")
+                                    print("-----GAME OVER-----")
+                                    quit(0)
+                                else:
+                                    print(
+                                        "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                                    print("-----GAME OVER-----")
+                                    quit(42)
+                        else:
+                            print(
+                                "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                            print("-----GAME OVER-----")
+                            quit(42)
+                    else:
+                        print(
+                            "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                        print("-----GAME OVER-----")
+                        quit(42)
+                elif offbuildingpremoss1 == 2:
+                    print("You remain where you are.\nSomeone decides to grab you, and throws you into the nearby swimming pool.\nThe lifeguard at the swimming pool jumps in after you.\nThey grab you.")
+                    pool = int(input("1. Defy the laws of physics.\n2. Do not."))
