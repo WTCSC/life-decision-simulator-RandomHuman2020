@@ -1,5 +1,8 @@
+import random
+
 print("Welcome to this here life simulator. You are a 4in tungsten cube which is somehow capable of making decisions. You are currently sitting on the edge of the roof of a 5 story building. The edge is slightly sloped towards the street. It is May 23rd, 1997. You decide to begin making decisions at exactly 08:07 AM.")
 
+dontaskaboutthisintthanks = random.randint(0, 10)
 begin = int(input("(Type the number for the option you want to select.)\n1. Stay perfectly still.\n2. Slide off the edge of the roof.\n3. Destroy the building."))
 if begin == 1:
     print("You remain still. Some moss begins to grow towards you.")
@@ -22,7 +25,8 @@ if begin == 1:
                     print("-----GAME OVER-----")
                     quit(0)
                 else:
-                    print("You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. You appear to be flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                    print(
+                        "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
                     print("-----GAME OVER-----")
                     quit(42)
             elif remainingstill3 == 2:
@@ -87,3 +91,54 @@ if begin == 1:
                 elif offbuildingpremoss1 == 2:
                     print("You remain where you are.\nSomeone decides to grab you, and throws you into the nearby swimming pool.\nThe lifeguard at the swimming pool jumps in after you.\nThey grab you.")
                     pool = int(input("1. Defy the laws of physics.\n2. Do not."))
+                    if pool == 1:
+                        print("You decide to defy the laws of physics.\nYou fling yourself out of the pool, and fly through someone's window.\nThe lifeguard decided to hold onto you during this.\nThey get slammed into the brick wall below the window.\n\nYou land on an alarm clock which, for some reason, was still going off despite there being nobody in the house.")
+                        print("-----GAME OVER-----")
+                        quit(0)
+                    elif pool == 2:
+                        print("You decide that moving is overrated.\nThe lifeguard, seeing as they can't lift you, goes back to the surface.\nYou notice some moss growing into the pool, and the sound of people outside the pool has grown quiet.\nMaybe you should get moving before that moss gets you.")
+                        mosspocalypse = int(input("1. Run from the moss.\n2. Accept your fate."))
+                        if mosspocalypse == 1 and dontaskaboutthisintthanks == 7:
+                            print("You run from the moss.\nYou run until you reach moss on the other side.\nYou decide that now might be a good time to break the laws of physics.\nYou fling yourself into space.\n\nYou watch as the moss consumes the entirety of Earth.\nYou are the only survivor.\n\n\n\nThere really isn't much to do out here.")
+                            print("-----GAME OVER-----")
+                            quit(-3055)
+                        elif mosspocalypse == 1 and dontaskaboutthisintthanks != 7:
+                            print("You run from the moss.\nYou run until you reach moss on the other side.\nThere is no escape from the moss.")
+                            print("-----GAME OVER-----")
+                            quit(3055)
+
+                        elif mosspocalypse == 2:
+                            print("You accept your fate.\nThe moss gets you.\nYou were but one casualty of the mosspocalypse.")
+                            print("-----GAME OVER-----")
+                            quit(3055)
+                        else:
+                            print(
+                                "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                            print("-----GAME OVER-----")
+                            quit(42)
+                    else:
+                        print(
+                            "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                        print("-----GAME OVER-----")
+                        quit(42)
+                else:
+                    print(
+                        "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                    print("-----GAME OVER-----")
+                    quit(42)
+            else:
+                print(
+                    "You attempt to do something that isn't possible. The universe was not happy about this. You suddenly get launched into the air. It appears you are flying directly into the sun. The sun could not withstand the impact, and supernovas.")
+                print("-----GAME OVER-----")
+                quit(42)
+        else:
+            print("Sorry, didn't have enough time to develop this path before the deadline. I might develop this project more outside of the assignment, so check back occasionally!")
+            quit(1)
+    else:
+        print(
+            "Sorry, didn't have enough time to develop this path before the deadline. I might develop this project more outside of the assignment, so check back occasionally!")
+        quit(1)
+else:
+    print(
+        "Sorry, didn't have enough time to develop this path before the deadline. I might develop this project more outside of the assignment, so check back occasionally!")
+    quit(1)
