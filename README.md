@@ -31,5 +31,5 @@ This project is licensed under the BSD Zero Clause License.
 See LICENSE.md for more info.
 
 
-
+## Flowchart for Paths
 ![A Flowchart](https://github.com/WTCSC/life-decision-simulator-RandomHuman2020/blob/main/image.png)
