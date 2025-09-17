@@ -28,6 +28,8 @@ If you wish to contribute code to this project, fork the repo, make your changes
 ## License
 This project is licensed under the BSD Zero Clause License.
 
+See LICENSE.md for more info.
+
 
 
 ![A Flowchart](https://github.com/WTCSC/life-decision-simulator-RandomHuman2020/blob/main/image.png)
